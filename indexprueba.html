@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Netflix</title>
+  <link rel="stylesheet" href="indexprueba.css">
+  <script defer src="indexprueba.js"></script>
+
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <img src="logo.png" alt="Logo" class="logo">
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Series TV</a></li>
+        <li><a href="#">Películas</a></li>
+        <li><a href="#">Novedades</a></li>
+        <li><a href="#">Mi lista</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Sliders -->
+  <main>
+    <!-- First Slider -->
+    <section class="slider">
+        <video src="video principal.mov" autoplay muted loop class="featured-video"></video>
+      </section>
+
+    <!-- Second Slider -->
+    <section class="slider row">
+        <div class="row-item">
+          <span class="rank">1</span>
+          <video src="video1.mp4" controls loop muted autoplay></video>
+        </div>
+        <div class="row-item">
+          <span class="rank">2</span>
+          <video src="video2.mp4" controls loop muted autoplay></video>
+        </div>
+        <div class="row-item">
+          <span class="rank">3</span>
+          <video src="video3.mp4" controls loop muted autoplay></video>
+        </div>
+        <div class="row-item">
+          <span class="rank">4</span>
+          <video src="video4.mp4" controls loop muted autoplay></video>
+        </div>
+      </section>
+
+    <!-- Third Slider -->
+    <section class="slider grid">
+      <div class="grid-item">Elemento A</div>
+      <div class="grid-item">Elemento B</div>
+      <div class="grid-item">Elemento C</div>
+      <div class="grid-item">Elemento D</div>
+      <div class="grid-item">Elemento E</div>
+      <div class="grid-item">Elemento F</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
