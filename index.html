@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Cabecera -->
+    <header id="header">
+        <nav class="navbar">
+            <div class="logo">Mi Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#main">Inicio</a></li>
+                <li><a href="#projects">Proyectos</a></li>
+                <li><a href="#about">Sobre mí</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <section id="main" class="hero">
+        <div class="hero-content">
+            <h1>Hola, soy [Tu Nombre]</h1>
+            <p>Desarrollador Web y Diseñador Creativo</p>
+            <a href="#projects" class="btn">Ver mis proyectos</a>
+        </div>
+    </section>
+
+    <!-- Proyectos -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <h2>Proyectos</h2>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto.</p>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto.</p>
+                </div>
+                <div class="swiper-slide">
+                    <h3>Proyecto 3</h3>
+                    <p>Descripción breve del proyecto.</p>
+                </div>
+            </div>
+            <!-- Botones de navegación -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="about" class="section" data-aos="fade-right">
+        <h2>Sobre mí</h2>
+        <p>Soy un desarrollador apasionado por crear soluciones únicas y efectivas...</p>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="section" data-aos="fade-left">
+        <h2>Contacto</h2>
+        <form class="contact-form">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu email" required>
+            <textarea name="message" placeholder="Tu mensaje" required></textarea>
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página -->
+    <footer id="footer">
+        <p>© 2024 Mi Portfolio. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
