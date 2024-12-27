@@ -54,35 +54,6 @@ body {
     overflow: hidden;
   }
   
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-    gap: 10px;
-  }
-  
-  .grid-item {
-    background-color: #333;
-    border-radius: 5px;
-    text-align: center;
-    padding: 20px;
-    font-size: 14px;
-  }
-  
-  .row {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    padding-bottom: 10px;
-  }
-  
-  .row-item {
-    position: relative;
-    min-width: 150px;
-    background-color: #333;
-    border-radius: 5px;
-    overflow: hidden;
-  }
-  
   /* Video Styles */
   .featured-video {
     width: 100%;        /* Mantiene el ancho completo */
@@ -106,43 +77,6 @@ body {
     font-size: 5rem;
     margin-bottom: 10px;
 }
-
-/* General video styles */
-video {
-    width: 100%;
-    height: 300px;
-    border-radius: 5px;
-    object-fit: cover;
-    transition: transform 0.5s ease; /* Agrega transición para el hover */
-    pointer-events: none;
-  }
-  
-  /* Habilitar interacción para hover */
-  .row-item video {
-    pointer-events: auto; /* Habilitar interacción del cursor */
-  }
-  
-  /* Hover effect */
-  video:hover {
-    transform: scale(1.05); /* Zoom effect on hover */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.8); /* Efecto de sombra */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Añadir suavidad */
-  }
-
-  .rank {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    background-color: #e50914;
-    color: white;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
 
   .month-slider {
     display: flex;
@@ -197,4 +131,71 @@ video {
 .month-slider::-webkit-scrollbar-thumb {
     background: #e50914;
     border-radius: 5px;
+}
+
+/* Modal general */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Contenido del modal */
+.modal-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    max-height: 90%;
+    text-align: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Imagen ampliada en el modal */
+.modal-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: contain;
+}
+
+/* Nombre del mes en el modal */
+.modal-content .month-name {
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    opacity: 1;
+}
+
+/* Botón de cerrar */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    background-color: #ff4a4a;
 }
