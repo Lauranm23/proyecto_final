@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: white;
+    overflow: auto; /* Permitir desplazamiento */
+}
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .logo {
+    height: 40px;
+  }
+  
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  .navbar a:hover {
+    color: #e50914;
+  }
+
+  /* Parallax Containers */
+.parallax-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .parallax-container:nth-child(odd) {
+    background-color: rgba(0, 0, 0, 0.5); /* Color alternativo para los impares */
+  }
+  
+  .content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+  }
+  
+  /* Specific Backgrounds for Months */
+  #enero {
+    background-image: url('enero1.mp4');
+  }
+  
+  #febrero {
+    background-image: url('video\ febrero.mp4');
+  }
+  
+  #marzo {
+    background-image: url('video\ marzo.mp4');
+  }
+
+  #abril {
+    background-image: url('video\ abril.mp4');
+  }
+
+  #mayo {
+    background-image: url('video\ mayo.mp4');
+  }
+
+  #junio {
+    background-image: url('video\ junio.mp4');
+  }
+
+  #julio {
+    background-image: url('video\ julio.mp4');
+  }
+
+  #agosto {
+    background-image: url('video\ agosto.mp4');
+  }
+
+  #septiembre {
+    background-image: url('video\ septiembre.mp4');
+  }
+
+  #octubre {
+    background-image: url('video\ octubre.mp4');
+  }
+
+  #noviembre {
+    background-image: url('video\ noviembre.mp4');
+  }
+
+  #diciembre {
+    background-image: url('video\ diciembre.mp4');
+  }
