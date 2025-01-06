@@ -110,6 +110,11 @@ document.addEventListener("DOMContentLoaded", () => {
             description: "Viaje a Menorca",
             img: "18septiembre.jpg",
         },
+        "2023-10-19": {
+            title: "19 de Octubre",
+            description: "Mi santo",
+            img: "19 octubre.jpg",
+        },
         "2023-11-06": {
             title: "6 de Noviembre",
             description: "Cumple de Lupe",
