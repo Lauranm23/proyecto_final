@@ -7,6 +7,42 @@ body {
     overflow: auto; /* Permitir desplazamiento */
 }
 
+/* Contenedor del Video */
+#video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    opacity: 1;
+    animation: fadeOutVideo 5s forwards; /* Aplica la animación después de 5 segundos */
+}
+
+@keyframes fadeOutVideo {
+    0% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        display: none; /* Esto es lo que hace que desaparezca */
+    }
+}
+
+#intro-video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: cover;
+}
+
 /* Header */
 .header {
     display: flex;
@@ -18,11 +54,11 @@ body {
     top: 0;
     z-index: 100;
 }
-  
+
 .logo {
     height: 40px;
 }
-  
+
 .navbar ul {
     list-style: none;
     display: flex;
@@ -30,13 +66,13 @@ body {
     margin: 0;
     padding: 0;
 }
-  
+
 .navbar a {
     text-decoration: none;
     color: white;
     font-size: 16px;
 }
-  
+
 .navbar a:hover {
     color: #e50914;
 }
@@ -46,32 +82,39 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px; /* Ajusta la separación */
-    height: 90vh; /* Más altura para el contenedor */
+    gap: 30px;
+    height: 90vh;
     margin: 0 auto;
-    padding: 0 50px; /* Reduce márgenes laterales */
+    padding: 0 50px;
 }
 
+/* Imagen con Marco Redondo */
 /* Imagen con Marco Redondo */
 .image-container {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición suave para el hover */
+}
+
+.image-container:hover {
+    transform: scale(1.1); /* Aumenta el tamaño ligeramente */
 }
 
 .profile-image {
-    width: 400px; /* Incrementa tamaño de la imagen */
+    width: 400px; /* Tamaño de la imagen */
     height: 400px;
     border-radius: 50%;
     object-fit: cover;
-    border: 8px solid #e50914; /* Marco más grueso */
+    border: 8px solid #e50914; /* Marco de la imagen */
 }
+
 
 /* Contenedor del Acordeón */
 .accordion-container {
     flex: 2;
-    max-width: 600px; /* Más ancho para el acordeón */
+    max-width: 600px;
     margin-right: 50px;
 }
 
@@ -92,7 +135,7 @@ body {
 
 .accordion-header {
     width: 100%;
-    padding: 20px; /* Incrementa el padding */
+    padding: 20px;
     background-color: #e50914;
     color: white;
     text-align: left;
@@ -111,10 +154,10 @@ body {
     overflow: hidden;
     background-color: #222;
     color: white;
-    padding: 0 20px; /* Ajusta padding interno */
+    padding: 0 20px;
     transition: max-height 0.3s ease-out;
 }
 
 .accordion-content p {
-    margin: 20px 0; /* Incrementa espacio entre párrafos */
+    margin: 20px 0;
 }
