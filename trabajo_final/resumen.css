@@ -1,0 +1,92 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #141414;
+  color: white;
+  overflow: auto;
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  height: 40px;
+}
+
+.header__navbar {
+  display: flex;
+}
+
+.header__menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu-item {
+  margin: 0;
+}
+
+.header__menu-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+.header__menu-link:hover {
+  color: #e50914;
+}
+
+/* Parallax */
+.parallax {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+
+.parallax__content {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.parallax__title {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.parallax__description {
+  font-size: 1.2rem;
+}
+
+/* Specific Backgrounds */
+.parallax--enero { background-image: url('resumen/video enero.mp4'); }
+.parallax--febrero { background-image: url('resumen/video febrero.mp4'); }
+.parallax--marzo { background-image: url('resumen/video marzo.mp4'); }
+.parallax--abril { background-image: url('resumen/video abril.mp4'); }
+.parallax--mayo { background-image: url('resumen/video mayo.mp4'); }
+.parallax--junio { background-image: url('resumen/video junio.mp4'); }
+.parallax--julio { background-image: url('resumen/video julio.mp4'); }
+.parallax--agosto { background-image: url('resumen/video agosto.mp4'); }
+.parallax--septiembre { background-image: url('resumen/video septiembre.mp4'); }
+.parallax--octubre { background-image: url('resumen/video octubre.mp4'); }
+.parallax--noviembre { background-image: url('resumen/video noviembre.mp4'); }
+.parallax--diciembre { background-image: url('resumen/video diciembre.mp4'); }
