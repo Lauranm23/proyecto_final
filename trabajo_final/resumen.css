@@ -56,9 +56,17 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
+}
+
+.parallax__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
 }
 
 .parallax__content {
@@ -66,27 +74,6 @@ body {
   background: rgba(0, 0, 0, 0.5);
   padding: 2rem;
   border-radius: 10px;
+  color: white;
+  z-index: 1;
 }
-
-.parallax__title {
-  font-size: 2rem;
-  margin: 0;
-}
-
-.parallax__description {
-  font-size: 1.2rem;
-}
-
-/* Specific Backgrounds */
-.parallax--enero { background-image: url('resumen/video enero.mp4'); }
-.parallax--febrero { background-image: url('resumen/video febrero.mp4'); }
-.parallax--marzo { background-image: url('resumen/video marzo.mp4'); }
-.parallax--abril { background-image: url('resumen/video abril.mp4'); }
-.parallax--mayo { background-image: url('resumen/video mayo.mp4'); }
-.parallax--junio { background-image: url('resumen/video junio.mp4'); }
-.parallax--julio { background-image: url('resumen/video julio.mp4'); }
-.parallax--agosto { background-image: url('resumen/video agosto.mp4'); }
-.parallax--septiembre { background-image: url('resumen/video septiembre.mp4'); }
-.parallax--octubre { background-image: url('resumen/video octubre.mp4'); }
-.parallax--noviembre { background-image: url('resumen/video noviembre.mp4'); }
-.parallax--diciembre { background-image: url('resumen/video diciembre.mp4'); }
