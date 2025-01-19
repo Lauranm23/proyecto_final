@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,16 +25,16 @@
 
   <!-- Sliders -->
   <main>
-    <!-- Primer Slider -->
+    <!-- First Slider -->
     <section class="slider__featured">
-      <video src="historias/videoprincipal.mov" autoplay muted loop class="slider__video"></video>
+      <video src="historias/videoprincipal.mov" autoplay muted loop playsinline class="slider__video"></video>
       <div class="slider__overlay-text">
         <h2>La historia de este año...</h2>
       </div>
     </section>
 
-    <!-- Segundo Slider -->
-    <div class="slider__months">
+    <!-- Third Slider -->
+    <section class="slider__months">
       <div class="slider__month-item">
         <img src="historias/enero.JPG" alt="Enero">
         <span class="slider__month-name">ENERO</span>
@@ -56,7 +56,7 @@
         <span class="slider__month-name">MAYO</span>
       </div>
       <div class="slider__month-item">
-        <img src="historias/junio.JPG" alt="Junio">
+        <img src="historias/junio.jpg" alt="Junio">
         <span class="slider__month-name">JUNIO</span>
       </div>
       <div class="slider__month-item">
@@ -68,28 +68,28 @@
         <span class="slider__month-name">AGOSTO</span>
       </div>
       <div class="slider__month-item">
-        <img src="historias/septiembre.JPG" alt="Septiembre">
+        <img src="historias/septiembre.jpg" alt="Septiembre">
         <span class="slider__month-name">SEPTIEMBRE</span>
       </div>
       <div class="slider__month-item">
-        <img src="historias/octubre.JPG" alt="Octubre">
+        <img src="historias/octubre.jpg" alt="Octubre">
         <span class="slider__month-name">OCTUBRE</span>
       </div>
       <div class="slider__month-item">
-        <img src="historias/noviembre.JPG" alt="Noviembre">
+        <img src="historias/noviembre.jpg" alt="Noviembre">
         <span class="slider__month-name">NOVIEMBRE</span>
       </div>
       <div class="slider__month-item">
         <img src="historias/diciembre.JPG" alt="Diciembre">
         <span class="slider__month-name">DICIEMBRE</span>
       </div>
-    </div>
-  </main>x
+    </section>
+  </main>
 
   <!-- Modal -->
   <div id="monthModal" class="modal">
     <div class="modal__content">
-      <img src="modalImage" alt="Mes">
+      <img id="modalImage" alt="Mes">
       <span id="modalMonth" class="modal__month-name"></span>
       <button id="closeModal" class="modal__close-button">X</button>
     </div>

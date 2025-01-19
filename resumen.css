@@ -67,6 +67,7 @@ body {
   height: 100%;
   object-fit: cover;
   z-index: -1;
+  pointer-events: none;
 }
 
 .parallax__content {
@@ -76,4 +77,25 @@ body {
   border-radius: 10px;
   color: white;
   z-index: 1;
+}
+
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 15px; 
+  }
+
+  .header__logo {
+    height: 10px; 
+  }
+
+  .header__menu-link {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header__menu-link {
+    font-size: 8px; 
+  }
 }
