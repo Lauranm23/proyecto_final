@@ -124,3 +124,23 @@ body {
       font-size: 14px;
   }
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 15px; 
+  }
+
+  .header__logo {
+    height: 20px; 
+  }
+
+  .header__menu-link {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header__menu-link {
+    font-size: 8px; 
+  }
+}

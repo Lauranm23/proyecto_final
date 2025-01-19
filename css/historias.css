@@ -23,7 +23,7 @@ body {
   height: 40px;
 }
 
-.header__navbar ul {
+.header__menu {
   list-style: none;
   display: flex;
   gap: 20px;
@@ -31,13 +31,13 @@ body {
   padding: 0;
 }
 
-.header__navbar a {
+.header__menu-link {
   text-decoration: none;
   color: white;
   font-size: 16px;
 }
 
-.header__navbar a:hover {
+.header__menu-link:hover {
   color: #e50914;
 }
 
@@ -195,4 +195,24 @@ main {
 
 .modal__close-button:hover {
   background-color: #ff4a4a;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 8px 15px; 
+  }
+
+  .header__logo {
+    height: 20px; 
+  }
+
+  .header__menu-link {
+    font-size: 10px; 
+  }
+}
+
+@media (max-width: 480px) {
+  .header__menu-link {
+    font-size: 8px; 
+  }
 }
